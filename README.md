@@ -3,6 +3,7 @@ This is the rock paper scissors in The Odin Project. It is an introductory proje
 
 Link to project: 
 
-How It's Made: Tech used: HTML, CSS, Java
+How It's Made: Tech used: HTML, CSS, JavaScript
 
-Lessons Learned: 
+Lessons Learned: How JavaScript manipulates HTML and how to use it. How to dynamically update webpages.
+How to add logic and if statements to detect a winner.
