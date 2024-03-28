@@ -8,6 +8,7 @@ const cpuScore = document.querySelector(".cpu-score");
 const playerScore = document.querySelector(".player-score");
 const winnerResults = document.querySelector(".results");
 const cpuChoiceText = document.querySelector(".cpu-choice");
+const playerChoice = document.querySelector(".player-selection");
 
 function getComputerChoice(){
 let number = Math.floor(Math.random() * 3);
@@ -22,6 +23,7 @@ return number;
     playerScore.innerHTML = playerScoreCounter;
     winnerResults.innerHTML = winner;
     cpuChoiceText.innerHTML = cpuPick;
+    playerChoice.innerHTML = playerPick;
     
 }
 document.querySelector("button.paper").onclick = function() {
@@ -32,6 +34,7 @@ document.querySelector("button.paper").onclick = function() {
     playerScore.innerHTML = playerScoreCounter;
     winnerResults.innerHTML = winner;
     cpuChoiceText.innerHTML = cpuPick
+    playerChoice.innerHTML = playerPick;
 }   
 document.querySelector("button.scissors").onclick = function() {
     playerPick = "SCISSORS";
@@ -41,6 +44,7 @@ document.querySelector("button.scissors").onclick = function() {
     playerScore.innerHTML = playerScoreCounter;
     winnerResults.innerHTML = winner;
     cpuChoiceText.innerHTML = cpuPick
+    playerChoice.innerHTML = playerPick;
 }
 
 function results(cpu,player){
