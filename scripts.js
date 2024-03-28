@@ -64,21 +64,23 @@ function results(cpu,player){
     }
     else if( player === "ROCK" && cpu === "SCISSORS" ){
         winner = "Player won with Rock";
-        cpuScoreCounter ++;
+        playerScoreCounter ++;
     }
     else if( player === "ROCK" && cpu === "PAPER" ){
         winner = "CPU won with Paper";
+        cpuScoreCounter ++;
+
     }
     else if( player === "SCISSORS" && cpu === "ROCK" ){
         winner = "CPU won with Rock";
-        playerScoreCounter ++;
+        cpuScoreCounter ++;
     }
     else if( player === "SCISSORS" && cpu === "SCISSORS" ){
         winner = "Draw";
-        cpuScoreCounter ++;
     }
     else if( player === "SCISSORS" && cpu === "PAPER" ){
         winner = "Player won with Scissors";
+        playerScoreCounter ++;
     }
 }
 
