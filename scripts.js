@@ -57,6 +57,12 @@ document.querySelector("button.reset-game").onclick = function(){
     document.querySelector("button.reset-game").hidden = true;
     cpuScore.innerHTML = cpuScoreCounter;
     playerScore.innerHTML = playerScoreCounter;
+    document.querySelector("button.rock").disabled = false;
+    document.querySelector("button.rock").hidden = false;
+    document.querySelector("button.paper").disabled = false;
+    document.querySelector("button.paper").hidden = false;
+    document.querySelector("button.scissors").disabled = false;
+    document.querySelector("button.scissors").hidden = false;
 
 }
 
@@ -66,12 +72,24 @@ function results(cpu,player){
         resetGame.innerHTML = "Reset Game";
         document.querySelector("button.reset-game").disabled = false;
         document.querySelector("button.reset-game").hidden = false;
+        document.querySelector("button.rock").disabled = true;
+        document.querySelector("button.rock").hidden = true;
+        document.querySelector("button.paper").disabled = true;
+        document.querySelector("button.paper").hidden = true;
+        document.querySelector("button.scissors").disabled = true;
+        document.querySelector("button.scissors").hidden = true;
     }
     else if(playerScoreCounter === 5){
         winner = "Player won the game";
         resetGame.innerHTML = "Reset Game";
         document.querySelector("button.reset-game").disabled = false;
         document.querySelector("button.reset-game").hidden = false;
+        document.querySelector("button.rock").disabled = true;
+        document.querySelector("button.rock").hidden = true;
+        document.querySelector("button.paper").disabled = true;
+        document.querySelector("button.paper").hidden = true;
+        document.querySelector("button.scissors").disabled = true;
+        document.querySelector("button.scissors").hidden = true;
     }
     else if( player === "PAPER" && cpu === "ROCK" ){
         winner = "Player won with Paper";
