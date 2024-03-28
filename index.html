@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -22,17 +22,25 @@
                     <button class="paper">Paper</button>
                     <button class="scissors">Scissors</button>
                 </div>
-            </div>
-                
-
-            
-            <div class="cpu">
-                Computer
-            </div>
-            
+            </div>  
+            <div class="cpu-options">
+                <div class="cpu">
+                    Computer
+                </div>
+                <div class="cpu-choice">
+                    Cpu Choice
+                </div>
+            </div>                                  
         </div>
         <div class="score">
-            Score
+            <div class="player-box">
+                <div class="player-name">Player Score</div>
+                <div class="player-score">20</div>
+            </div>
+            <div class="cpu-box">
+                <div class="cpu-name">CPU Score</div>
+                <div class="cpu-score">40</div>
+            </div>
         </div>
     </div>
 </body>

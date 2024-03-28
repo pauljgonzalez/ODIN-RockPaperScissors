@@ -46,6 +46,52 @@ width: 250px;
 display: flex;
 justify-content: space-between;
 }
+.cpu-options{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width: 250px;
+}
 .cpu{
-
+font-size: 24px;
+font-weight: bold;
+color: blue;
+}
+.cpu-choice{
+font-size: 16px;
+font-weight: bold;
+}
+.score{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.player-box{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 16px;
+}
+.player-name{
+font-size: 16px;
+font-weight: bold;
+}
+.player-score{
+font-size: 32px;
+font-weight: bolder;
+}
+.cpu-box{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 16px;
+}
+.cpu-name{
+font-size: 16px;
+font-weight: bold;  
+}
+.cpu-score{
+font-size: 32px;
+font-weight: bolder
 }
