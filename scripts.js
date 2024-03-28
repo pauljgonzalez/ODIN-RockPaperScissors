@@ -9,6 +9,9 @@ const playerScore = document.querySelector(".player-score");
 const winnerResults = document.querySelector(".results");
 const cpuChoiceText = document.querySelector(".cpu-choice");
 const playerChoice = document.querySelector(".player-selection");
+const resetGame = document.querySelector(".reset-game");
+document.querySelector("button.reset-game").disabled = true;
+document.querySelector("button.reset-game").hidden = true;
 
 function getComputerChoice(){
 let number = Math.floor(Math.random() * 3);
@@ -47,8 +50,30 @@ document.querySelector("button.scissors").onclick = function() {
     playerChoice.innerHTML = playerPick;
 }
 
+document.querySelector("button.reset-game").onclick = function(){
+    playerScoreCounter = 0;
+    cpuScoreCounter = 0;
+    document.querySelector("button.reset-game").disabled = true;
+    document.querySelector("button.reset-game").hidden = true;
+    cpuScore.innerHTML = cpuScoreCounter;
+    playerScore.innerHTML = playerScoreCounter;
+
+}
+
 function results(cpu,player){
-    if( player === "PAPER" && cpu === "ROCK" ){
+    if (cpuScoreCounter === 5){
+        winner = "CPU won the game";
+        resetGame.innerHTML = "Reset Game";
+        document.querySelector("button.reset-game").disabled = false;
+        document.querySelector("button.reset-game").hidden = false;
+    }
+    else if(playerScoreCounter === 5){
+        winner = "Player won the game";
+        resetGame.innerHTML = "Reset Game";
+        document.querySelector("button.reset-game").disabled = false;
+        document.querySelector("button.reset-game").hidden = false;
+    }
+    else if( player === "PAPER" && cpu === "ROCK" ){
         winner = "Player won with Paper";
         playerScoreCounter ++;
     }
